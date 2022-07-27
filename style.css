@@ -134,6 +134,7 @@ blockquote figcaption {
 	justify-content: space-between;
 	gap: 3em;
 	padding: 3.5em 7em;
+	border-radius: 1em;
 }
 .signup h3 {
 	margin: 0;
