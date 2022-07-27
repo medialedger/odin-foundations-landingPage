@@ -1,0 +1,159 @@
+:root {
+	--color-bg-dark: hsl(215, 28%, 17%);
+	--color-bg-light: hsl(220, 13%, 91%);
+	--color-txt-lighter: hsl(90, 17%, 98%);
+	--color-txt-light: hsl(220, 13%, 91%);
+	--color-txt-dark: hsl(215, 28%, 17%);
+	--color-button: hsl(217, 91%, 59%);
+	--width-desktop: 1024px;
+}
+html {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	color: var(--color-txt-dark);
+	background-color: #fff;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+.container {
+	max-width: var(--width-desktop);
+	margin: 0 auto;
+}
+/* header */
+header {
+	background-color: var(--color-bg-dark);
+	color: var(--color-txt-lighter);
+	padding: 1em 0;
+}
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header .logo {
+	font-size: 1.5em;
+}
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 1.6em;
+	align-items: center;
+}
+header nav a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.125em;
+}
+/* main content */
+.hero {
+	background-color: var(--color-bg-dark);
+	color: var(--color-txt-lighter);
+	padding: 7em 0;
+}
+.hero .container {
+	display: flex;
+	align-items: flex-start;
+	gap: 3em;
+}
+.hero h1 {
+	font-size: 3em;
+	margin: 0 0 .25em 0;
+	line-height: 1;
+}
+.hero p {
+	color: var(--color-txt-light);
+	font-size: 1.125em;
+	margin: 0 0 1em;
+	line-height: 1.5;
+}
+.btn {
+	display: inline-block;
+	background-color: var(--color-button);
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 700;
+	padding: .5em 2em;
+	border-radius: .4em;
+}
+/* cards section */
+.random {
+	padding: 3em 0;
+	text-align: center;
+}
+.random h2 {
+	font-size: 2.25em;
+	margin: 0 0 1.25em;
+}
+.cards {
+	display: flex;
+	gap: 3em;
+	justify-content: center;
+}
+.card {
+	width: 170px;
+}
+.card img {
+	display: block;
+	border-radius: 1em;
+}
+.card p {
+	font-size: 1.125em;
+	margin: .5em 0 0;
+}
+.quote {
+	background-color: var(--color-bg-light);
+	margin: 4em 0 0;
+}
+blockquote {
+	padding: 8.5em 6em 6em;
+}
+blockquote p {
+	font-size: 2.25em;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0;
+}
+blockquote figcaption {
+	text-align: right;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.signup {
+	background-color: var(--color-button);
+	color: #fff;
+	margin: 6em auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3em;
+	padding: 3.5em 7em;
+}
+.signup h3 {
+	margin: 0;
+	font-size: 1.5em;
+}
+.signup p {
+	margin: 0;
+	font-size: 1.125em;
+}
+.signup .btn {
+	background-color: transparent;
+	border: 2px solid currentColor;
+}
+footer {
+	background-color: var(--color-bg-dark);
+	color: var(--color-txt-lighter);
+	text-align: center;
+	padding: 2em 0;
+}
+footer p {
+	margin: 0;
+	font-size: 1.125em;
+}
